@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicação FIDO2</title>
+  <!-- Importar Material Design CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h4>Aplicação FIDO2</h4>
+    <div class="input-field">
+      <textarea id="payload" class="materialize-textarea" placeholder="Insira o payload aqui"></textarea>
+      <label for="payload">Payload</label>
+    </div>
+    <button id="startButton" class="btn waves-effect waves-light">Iniciar Desafio FIDO2</button>
+    <div class="section">
+      <h5>Resultado</h5>
+      <pre id="result"></pre>
+    </div>
+  </div>
+  <!-- Importar Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Script da aplicação -->
+  <script src="app.js"></script>
+</body>
+</html>
